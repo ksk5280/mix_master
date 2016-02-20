@@ -99,6 +99,8 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    pry-rails (0.3.4)
+      pry (>= 0.9.10)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -135,6 +137,10 @@ GEM
     rake (10.5.0)
     rdoc (4.2.2)
       json (~> 1.4)
+    rspec (3.4.0)
+      rspec-core (~> 3.4.0)
+      rspec-expectations (~> 3.4.0)
+      rspec-mocks (~> 3.4.0)
     rspec-core (3.4.3)
       rspec-support (~> 3.4.0)
     rspec-expectations (3.4.0)
@@ -201,9 +207,10 @@ DEPENDENCIES
   jquery-rails
   launchy
   pg (~> 0.15)
-  pry
+  pry-rails
   rails (= 4.2.5)
   rails_12factor
+  rspec
   rspec-rails
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
