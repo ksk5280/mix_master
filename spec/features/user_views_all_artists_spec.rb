@@ -9,7 +9,7 @@ RSpec.feature "user views all artists" do
     visit artists_path
 
     artists.each do |artist|
-    expect(page).to have_link artist.name, href: artist_path(artist)
+      expect(page).to have_link artist.name, href: artist_path(artist)
     end
   end
 end
