@@ -1,4 +1,6 @@
 class PlaylistsController < ApplicationController
+  before_action :find_playlist, only: [:show, :edit, :update]
+
   def index
     @playlists = Playlist.all
   end
@@ -13,15 +15,12 @@ class PlaylistsController < ApplicationController
   end
 
   def show
-    find_playlist
   end
 
   def edit
-    find_playlist
   end
 
   def update
-    find_playlist
     if @playlist.update(playlist_params)
       redirect_to @playlist
     else
