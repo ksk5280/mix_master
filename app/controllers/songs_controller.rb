@@ -7,8 +7,11 @@ class SongsController < ApplicationController
   def create
     find_artist
     @song = @artist.songs.create(song_params)
-
-    redirect_to song_path(@song)
+    if @song.save
+      redirect_to song_path(@song)
+    else
+      render :new
+    end
   end
 
   def show
