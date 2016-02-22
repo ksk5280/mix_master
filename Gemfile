@@ -41,6 +41,7 @@ group :development, :test do
   gem 'shoulda-matchers', github: 'thoughtbot/shoulda-matchers'
   gem 'database_cleaner'
   gem 'factory_girl_rails', :require => false
+  gem 'faker'
 end
 
 group :development do
@@ -49,3 +50,5 @@ group :development do
 end
 
 gem 'rails_12factor', group: :production
+gem 'omniauth-oauth2'
+gem 'figaro'
